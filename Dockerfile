@@ -1,4 +1,4 @@
-FROM php:7.4-fpm
+FROM php:7.4-fpm-buster
 
 RUN apt-get update && apt-get upgrade -y
 
