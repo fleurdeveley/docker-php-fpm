@@ -2,7 +2,7 @@ FROM php:7.4-fpm-buster
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN apt-get install -y apt-transport-https curl zip unzip pkg-config cron libonig-dev libcurl4-openssl-dev libssl-dev
+RUN apt-get install -y apt-transport-https sudo curl zip unzip pkg-config cron libonig-dev libcurl4-openssl-dev libssl-dev
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql bcmath
